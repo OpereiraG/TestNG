@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Abracadabra">
+<classes>
+    <class name="class01.Priority">
+        <methods>
+            <include name="aTest"/>
+            <include name="bTest"/>
+            <exclude name="cTest"/>
+        </methods>
+    </class>
+    <class name="class01.AssertionBasic">
+        <methods>
+            <include name="InvalidCredentials"/>
+        </methods>
+    </class>
+</classes>
+    </test>
+</suite>
